@@ -1,4 +1,4 @@
-package real;
+package gms;
 
 import java.awt.CardLayout;
 import java.util.Scanner;
@@ -31,16 +31,12 @@ import javax.swing.JOptionPane;
 							+ "3. 성별체크(SSN)");
 					switch (mMenu) {
 					case "1":
-						String[] arr = JOptionPane.showInputDialog(null,
-								"키,몸무게 입력").split(",");
-						String bmi = m.bmi(Double.parseDouble(arr[0]), 
-								Double.parseDouble(arr[1]));
-						JOptionPane.showMessageDialog(null,
-								String.format("%s 님은 %s 입니다.", 
-										m.name,
-										bmi));
-										
+						String[] arr = JOptionPane.showInputDialog(null,"키,몸무게 입력").split(",");
+						String bmi = m.bmi(Double.parseDouble(arr[0]),Double.parseDouble(arr[1])); 
+						JOptionPane.showMessageDialog(null,String.format("%s 님은 %s 입니다.",m.name,bmi)); 
+								
 						break;
+					
 					case "2":
 						String[]arr2 = JOptionPane.showInputDialog
 						(null,"국어, 영어, 수학, 과학, 사회 입력").split(",");
@@ -90,8 +86,10 @@ import javax.swing.JOptionPane;
 							JOptionPane.showMessageDialog(null,String.format("%s 입니다.", res4));
 						break;
 						}
+					case "2" :
 						
 						}
+				
 						
 						
 					
