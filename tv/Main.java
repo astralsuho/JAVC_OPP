@@ -16,7 +16,9 @@ public class Main {
 							"종료 ..");
 					return;
 				case "1":
-					//brand,color,price 입력함 
+					String brand = JOptionPane.showInputDialog("TV브랜드를 입력해 주세요");//brand,color,price 입력함 
+					String color = JOptionPane.showInputDialog("원하시는 TV색상을 입력해 주세요");
+					String price = JOptionPane.showInputDialog("");
 					// TV브랜드
 					// TV색상
 					// 가격
